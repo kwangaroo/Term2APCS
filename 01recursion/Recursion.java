@@ -25,6 +25,7 @@ public class Recursion{
     public static void main(String[]args){
 	Recursion a = new Recursion(); 
 	System.out.println(a.fact(0));
-	System.out.println(a.fact(5)); 
+	System.out.println(a.fact(5));
+	System.out.println(a.fact(10)); 
     }
 }
