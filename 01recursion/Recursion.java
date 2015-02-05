@@ -5,6 +5,9 @@ public class Recursion{
     }
 
     public int fact(int n){
+	if(n<0){
+	    throw new IllegalArgumentException("Can't evaluate a negative number.");
+	}
 	if(n==0){
 	    return 0; 
 	}else if(n==1){
@@ -26,6 +29,6 @@ public class Recursion{
 	Recursion a = new Recursion(); 
 	System.out.println(a.fact(0));
 	System.out.println(a.fact(5));
-	System.out.println(a.fact(10)); 
+	System.out.println(a.fact(-10)); 
     }
 }
