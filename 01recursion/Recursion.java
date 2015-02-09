@@ -9,7 +9,7 @@ public class Recursion{
 	    throw new IllegalArgumentException("Can't evaluate a negative number.");
 	}
 	if(n==0){
-	    return 0; 
+	    return 1; 
 	}else if(n==1){
 	    return 1;
 	}else{
@@ -27,7 +27,7 @@ public class Recursion{
 	}
 	return fib(n-1)+fib(n-2); 
     }
-    
+
     public double sqrt(double n){
 	if(n<0){
 	    throw new IllegalArgumentException("Can't evaluate a negative number.");
@@ -49,18 +49,18 @@ public class Recursion{
 	return sqrtHelp(n,newGuess); 
     }
     
-    public static void main(String[]args){
+    /*    public static void main(String[]args){
 	Recursion a = new Recursion(); 
-	//	System.out.println(a.fact(0));
-	//	System.out.println(a.fact(5));
-	//	System.out.println(a.fact(-10)); 
+	System.out.println("0 factorial: " +a.fact(0));
+	System.out.println("5 factorial: " +a.fact(5));
+	System.out.println("-10 factorial: "+a.fact(-10)); 
       	System.out.println(a.fib(5));
-	//	System.out.println(a.fib(-1));
+	System.out.println(a.fib(-1));
 	System.out.println(a.fib(7));
 	System.out.println(a.fib(0));
 	System.out.println(a.sqrt(100)); 
 	System.out.println(a.sqrt(144));
 	System.out.println(a.sqrt(50));
 	System.out.println(a.sqrt(-100));  
-    }
+	}*/
 }
